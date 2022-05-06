@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(240, 247, 239);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search-text-input {
+  /* max-width: 400px; */
+}
+
+.search-and-item-info {
+  display: flex;
+  padding-top: 10px;
+}
+
+.search-button-icon {
+  font-size: 17px;
+}
+
+.search-button {
+  max-width: 75px;
+}
+
+.item-search {
+  display: flex;
+}
+
+.item-info {
+  display: flex;
+}
+
+.item-icon {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 5px;
+  top: -30px;
+}
+
+.item-name {
+  position: relative;
+  top: -4px;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item-description {
+  position: fixed;
+  left: 455px;
+  top: 130px;
+  font-family: cursive;
+}
+
+.item-info-skeleton {
+  display: flex;
+  position: relative;
+  top: 7px;
+}
+
+.item-icon-skeleton {
+  position: relative;
+  top: -32px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.item-name-skeleton {
+  position: relative;
+  top: -20px;
+}
+
+.item-description-skeleton {
+  position: relative;
+  left: -199px;
+  top: 15px;
+}
+
+.chart-loading-bars {
+  position: absolute;
+  left: 875px;
+  top: 500px;
+  z-index: 2;
+}
+
+.chart-loading-skeleton {
+  width: 95%;
+  height: 700px;
+  z-index: 1;
+}
+
+.chart {
+  max-width: 95%;
+  max-height: 80%;
+}
+
+.starting-text {
+  padding-left: 50px;
+  position: relative;
+  top: 22px;
+}
+
+.favorite-button {
+  border: none;
+  color: rgb(234, 97, 120);
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0);
+  max-height: 20px;
+  max-width: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: -7px;
+  font-size: large;
+}
+
+.favorite-button:hover {
+  opacity: 70%;
+}
+
+.favorite-button:active {
+  font-size: 15px;
+}
+
+.favorites-drawer-button {
+  margin-left: 70%;
+}
+
+.single-fav-item {
+  display: flex;
+  margin-left: 2%;
+  margin-top: 4%;
+  max-height: 35px;
+}
+
+.single-fav-item:hover {
+  background-color: rgba(223, 249, 222, 0.347);
+  cursor: pointer;
+}
+
+.fav-item-icon {
+  margin-right: 2%;
+}
+
+.fav-item-name {
+  position: relative;
+  top: -6px;
+}
+
+.favorites {
+  /* overflow: scroll; */
+  color: rgb(79, 223, 156)
+}
