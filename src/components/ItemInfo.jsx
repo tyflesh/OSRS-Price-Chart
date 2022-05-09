@@ -28,13 +28,15 @@ const ItemInfo = ({ itemData, searching, favorited, handleFavorite }) => {
       (
         <div className='item-info'>
           <img src={itemData.icon_large} className='item-icon'></img>
-          <span className='item-name'>{itemData.name}</span>
-          <p className='item-description'>{itemData.description}</p>
-          <button
-            onClick={() => handleFavorite()}
-            className='favorite-button'>
-            <i className={`fa-${heartType} fa-heart`}></i>
-          </button>
+          <div className='item-name-and-description'>
+            <span className='item-name'>{itemData.name}</span>
+            <button
+              onClick={() => handleFavorite()}
+              className='favorite-button'>
+              <i className={`fa-${heartType} fa-heart`}></i>
+            </button>
+            <div className='item-description'>{itemData.description}</div>
+          </div>
         </div >
       )
   }

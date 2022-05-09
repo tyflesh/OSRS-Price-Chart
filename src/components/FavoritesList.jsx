@@ -5,7 +5,7 @@ import { ScrollArea, Divider } from '@mantine/core';
 const FavoritesList = ({ favoriteList, handleSearch }) => {
 
   return (
-    <ScrollArea style={{ height: 900 }} scrollbarSize={15} scrollHideDelay={500}>
+    <ScrollArea className='favorites-scroll' style={{ height: 870 }} scrollbarSize={15} scrollHideDelay={500}>
       <div className='favorites'>
         {favoriteList.map((item, i) => {
           return (

@@ -113,32 +113,34 @@ class App extends React.Component {
 
     return (
       <MantineProvider>
-        <h1>OSRS Item Prices
+        <div className='title-and-favorites-drawer-button'>
+          <h1>OSRS Item Prices</h1>
           <Button className='favorites-drawer-button' color="teal" size="md"
             onClick={() => this.toggleFavoriteDrawer()}>
             Favorites
           </Button>
-          <Divider my="sm" />
-        </h1>
+        </div>
+
+        <Divider my="sm" className='header-divider' />
         <div className='search-and-item-info'>
           <Search handleSearch={this.handleSearch} />
           <ItemInfo itemData={itemData} searching={searching}
             favorited={favorited} handleFavorite={this.handleFavorite} />
-          <Drawer
-            opened={favsOpened}
-            onClose={() => {
-              this.setState({
-                favsOpened: false
-              })
-            }}
-            title="Favorites"
-            padding="xl"
-            size="xl"
-            position="right"
-          >
-            <FavoritesList favoriteList={favoriteList} handleSearch={this.handleSearch} />
-          </Drawer>
         </div>
+        <Drawer
+          opened={favsOpened}
+          onClose={() => {
+            this.setState({
+              favsOpened: false
+            })
+          }}
+          title="Favorites"
+          padding="xl"
+          size="xl"
+          position="right"
+        >
+          <FavoritesList favoriteList={favoriteList} handleSearch={this.handleSearch} />
+        </Drawer>
         <ChartComponent itemData={itemData} searching={searching} />
       </MantineProvider >
     );

@@ -32,6 +32,8 @@ const ChartComponent = ({ itemData, searching }) => {
     return myChart;
   };
 
+  // searching = true;
+
   if (!itemData && !searching) {
     return (<div>
 
@@ -49,14 +51,6 @@ const ChartComponent = ({ itemData, searching }) => {
         <Line className='chart' data={setChart().data} />
       )
   }
-
-  return (
-    <div>
-      <Skeleton className='chart-loading-skeleton' height={500} mt={6} width="70%" radius="xl" />
-      <Loader className='chart-loading-bars' color="teal" size="xl" variant="bars" />
-    </div>
-
-  )
 };
 
 export default ChartComponent;
